@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="transition-colors duration-600">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Oscar Flávio Jr's Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              antonio: ["Antonio", "sans-serif"],
+              sans: ["Fira Sans", "ui-sans-serif", "system-ui"],
+              mono: ["Inconsolata", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"
+  >
+    <header>
+      <div class="flex justify-end p-4">
+        <button
+          id="themeToggle"
+          class="relative w-14 h-8 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors duration-300 focus:outline-none"
+          aria-label="Alternar tema"
+        >
+          <span
+            id="toggleDot"
+            class="absolute top-1 left-1 w-6 h-6 rounded-full bg-white flex items-center justify-center text-xs transition-all duration-300 dark:translate-x-6"
+          >
+            🌙
+          </span>
+        </button>
+      </div>
+
+      <div class="flex justify-center pt-2 gap-6">
+        <a href="#" class="opacity-50 hover:opacity-100 transition"
+          >Sobre Mim</a
+        >
+        <a href="#" class="opacity-50 hover:opacity-100 transition"
+          >Portfólio</a
+        >
+        <a href="#" class="opacity-50 hover:opacity-100 transition">Stack</a>
+        <a href="#" class="opacity-50 hover:opacity-100 transition">Contato</a>
+      </div>
+    </header>
+
+    <main
+      class="h-screen flex flex-col items-center justify-center text-center"
+    >
+      <h1 class="font-antonio text-5xl font-bold">Oscar Flávio Jr.</h1>
+      <h2 class="font-antonio text-xl opacity-70 mt-2">Software Engineer</h2>
+    </main>
+
+    <section id="about" class="max-w-3xl mx-auto px-6 py-24">
+      <h3 class="font-antonio text-3xl mb-6">sobre mim</h3>
+
+      <p class="text-base leading-relaxed opacity-80">
+        Sou engenheiro de Software/Programador com foco em Web-Development,
+        criação de produtos e sistemas desde a sua concepção até a sua entrega.
+        Cada produto é único e tem suas próprias decisões, desde Stack até como
+        será entregue e como irá performar. Na minha Stack atual (Que será
+        revista daqui a pouco aqui mesmo!) uso bastante RubyOnRails, Java,
+        JavaScript e C#. Com um ano de carreira e sendo único no Setor na
+        empresa qual atualmente trabalho, fui responsável pela criação de
+        features, sistemas preventivos, dashboards, SaaS, sistemas internos,
+        além de muitas outras atividades!
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
