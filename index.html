@@ -48,20 +48,40 @@
         </button>
       </div>
 
-      <div class="flex justify-center pt-2 gap-6">
-        <a href="#" class="opacity-50 hover:opacity-100 transition"
+      <div
+        class="flex justify-center pt-2 gap-6 opacity-0 transition-opacity duration-700"
+        id="heading"
+      >
+        <a
+          href="#"
+          class="opacity-50 hover:opacity-100 transition"
+          id="about_me"
           >Sobre Mim</a
         >
-        <a href="#" class="opacity-50 hover:opacity-100 transition"
+        <a
+          href="#"
+          class="opacity-50 hover:opacity-100 transition"
+          id="portfolio_path"
           >Portfólio</a
         >
-        <a href="#" class="opacity-50 hover:opacity-100 transition">Stack</a>
-        <a href="#" class="opacity-50 hover:opacity-100 transition">Contato</a>
+        <a
+          href="#"
+          class="opacity-50 hover:opacity-100 transition"
+          id="stack_path"
+          >Stack</a
+        >
+        <a
+          href="#"
+          class="opacity-50 hover:opacity-100 transition"
+          id="contact_path"
+          >Contato</a
+        >
       </div>
     </header>
 
     <main
-      class="h-screen flex flex-col items-center justify-center text-center"
+      class="h-screen flex flex-col items-center justify-center text-center opacity-0 transition-opacity duration-700"
+      id="name"
     >
       <h1 class="font-antonio text-5xl font-bold">Oscar Flávio Jr.</h1>
       <h2 class="font-antonio text-xl opacity-70 mt-2">Software Engineer</h2>
@@ -71,16 +91,149 @@
       <h3 class="font-antonio text-3xl mb-6">sobre mim</h3>
 
       <p class="text-base leading-relaxed opacity-80">
-        Sou engenheiro de Software/Programador com foco em Web-Development,
-        criação de produtos e sistemas desde a sua concepção até a sua entrega.
-        Cada produto é único e tem suas próprias decisões, desde Stack até como
-        será entregue e como irá performar. Na minha Stack atual (Que será
-        revista daqui a pouco aqui mesmo!) uso bastante RubyOnRails, Java,
+        Sou engenheiro de Software/Programador com foco em Web-Development Full
+        Stack, criação de produtos e sistemas desde a sua concepção até a sua
+        entrega. Cada produto é único e tem suas próprias decisões, desde Stack
+        até como será entregue e como irá performar. Na minha Stack atual (Que
+        será revista daqui a pouco aqui mesmo!) uso bastante RubyOnRails, Java,
         JavaScript e C#. Com um ano de carreira e sendo único no Setor na
         empresa qual atualmente trabalho, fui responsável pela criação de
         features, sistemas preventivos, dashboards, SaaS, sistemas internos,
         além de muitas outras atividades!
       </p>
+    </section>
+
+    <section id="portfolio" class="max-w-3xl mx-auto px-6 py-24">
+      <h3 class="font-antonio text-3xl mb-6">Portfólio</h3>
+
+      <div class="space-y-10">
+        <div
+          class="border border-neutral-300 dark:border-neutral-700 p-6 rounded-lg"
+        >
+          <h4 class="font-antonio text-xl mb-2">HUB de conhecimento</h4>
+          <p class="opacity-80 text-sm mb-2">
+            Centralização de conteúdo, streaming e métricas para análise de uso
+            e evolução de features internas.
+          </p>
+          <p class="text-xs opacity-60">Rails · Golang · Next · PostgreSQL</p>
+        </div>
+
+        <div
+          class="border border-neutral-300 dark:border-neutral-700 p-6 rounded-lg"
+        >
+          <h4 class="font-antonio text-xl mb-2">IA Conversacional</h4>
+          <p class="opacity-80 text-sm mb-2">
+            Sistema de IA conversacional com recuperação de contexto (RAG) para
+            respostas precisas baseadas em conhecimento customizado.
+          </p>
+          <p class="text-xs opacity-60">Python · Ollama · Docker</p>
+        </div>
+
+        <div
+          class="border border-neutral-300 dark:border-neutral-700 p-6 rounded-lg"
+        >
+          <h4 class="font-antonio text-xl mb-2">Extensão de Navegador</h4>
+          <p class="opacity-80 text-sm mb-2">
+            Extensão de navegador com diversas funções
+          </p>
+          <p class="text-xs opacity-60">JavaScript</p>
+        </div>
+
+        <div
+          class="border border-neutral-300 dark:border-neutral-700 p-6 rounded-lg"
+        >
+          <h4 class="font-antonio text-xl mb-2">Scraper de informações</h4>
+          <p class="opacity-80 text-sm mb-2">Scraper</p>
+          <p class="text-xs opacity-60">Python</p>
+        </div>
+
+        <div
+          class="border border-neutral-300 dark:border-neutral-700 p-6 rounded-lg"
+        >
+          <h4 class="font-antonio text-xl mb-2">Alerta de Sites offline</h4>
+          <p class="opacity-80 text-sm mb-2">
+            Alerta que envia mensagens quando um site se encontra fora de ar
+            pelo menos três vezes
+          </p>
+          <p class="text-xs opacity-60">C#</p>
+        </div>
+
+        <section class="max-w-3xl mx-auto px-6 py-24">
+          <h3 class="font-antonio text-3xl mb-6">como eu construo software</h3>
+
+          <ul class="space-y-2 text-sm opacity-80">
+            <li>• Decisões técnicas baseadas em contexto, não tendências.</li>
+            <li>• Simplicidade acima da complexidade</li>
+            <li>• APIs claras, observáveis e fáceis de manter</li>
+            <li>• Performance e manutenção caminham juntas</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section id="stack" class="max-w-3xl mx-auto px-6 py-24">
+      <h3 class="font-antonio text-3xl mb-6">stack</h3>
+
+      <div class="space-y-8 text-sm">
+        <div>
+          <h4 class="font-antonio text-xl mb-2">uso diário</h4>
+          <p class="opacity-80">
+            Ruby on Rails · JavaScript · PostgreSQL · REST APIs
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-antonio text-xl mb-2">produção</h4>
+          <p class="opacity-80">Golang · Python · C# · Docker</p>
+        </div>
+
+        <div>
+          <h4 class="font-antonio text-xl mb-2">conceitos</h4>
+          <p class="opacity-80">
+            Arquitetura de APIs · Autenticação · Observabilidade · Dashboards ·
+            SaaS interno
+          </p>
+          <p class="text-xs opacity-60 mt-6">
+            Stack escolhida com base em contexto, custo, manutenção e impacto no
+            produto.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="max-w-3xl mx-auto px-6 py-24 text-center">
+      <h3 class="font-antonio text-3xl mb-6">contato</h3>
+
+      <p class="opacity-80 mb-8 text-sm">
+        Aberto para conversar sobre projetos, produtos, sistemas e desafios
+        técnicos.
+      </p>
+
+      <div class="flex justify-center gap-6 text-sm">
+        <a
+          href="mailto:oscarflaviojur@gmail.com"
+          class="opacity-70 hover:opacity-100 transition underline"
+        >
+          Email
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/oscar-flavio-60192b373/"
+          target="_blank"
+          class="opacity-70 hover:opacity-100 transition underline"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/OscarFlavioJr"
+          target="_blank"
+          class="opacity-70 hover:opacity-100 transition underline"
+        >
+          GitHub
+        </a>
+      </div>
+      <p class="text-xs opacity-60 mt-10">Respondo normalmente em até 24h.</p>
     </section>
 
     <script src="script.js"></script>
